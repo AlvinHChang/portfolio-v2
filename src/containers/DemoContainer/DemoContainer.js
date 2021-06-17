@@ -7,9 +7,8 @@ import DemoWindow from '../../components/DemoWindow/DemoWindow';
 // class DemoCreated extends React.Component {
 function DemoContainer(props) {
   const { componentRendered } = props;
-  console.log(componentRendered);
   return (
-    <React.Fragment>
+    <>
       {componentRendered.map((component, index) => (
         <div
           className={styles.offset}
@@ -19,7 +18,7 @@ function DemoContainer(props) {
           {<DemoWindow componentName={component.name} componentItem={component.component} />}
         </div>
       ))}
-    </React.Fragment>
+    </>
   );
 }
 

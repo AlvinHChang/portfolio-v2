@@ -1,8 +1,10 @@
 .dropdown {
   display: inline-block;
 }
-.dropdownButton:focus {
-  outline: 0;
+.dropdownButton {
+  border: none;
+  outline: none;
+  background-color: #01579B;
 }
 .dropdownItem {
   position: absolute;

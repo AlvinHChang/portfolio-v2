@@ -38,3 +38,10 @@ a {
 .headerLink:active {
     background: black;
 }
+
+.dropdownContainer {
+  text-align: start;
+  margin-right: 40px;
+  opacity: 0.8;
+}
+

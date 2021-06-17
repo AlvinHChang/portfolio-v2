@@ -9,7 +9,7 @@ import styles from './Dropdown.module.css';
 // Also requires the items that show up when the dropdown is shown.
 function Dropdown(props) {
     const [isOpen, setIsOpen] = useState(false);
-    const { customButton, dropdownItem, dropdownBackgroundColor } = props;
+    const { children, customButton, dropdownItem, dropdownBackgroundColor } = props;
       const variants = {
           open: { opacity: 1, x: 0 },
           closed: { opacity: 0, y: "-100%" },
@@ -35,6 +35,7 @@ function Dropdown(props) {
                     className={styles.dropdownItem}
                 >
                     {dropdownItem}
+                    {children}
                 </div>
             </motion.div>
         </div>
