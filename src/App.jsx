@@ -6,6 +6,7 @@ import HomePage from './containers/pages/HomePage/HomePage';
 import AboutPage from './containers/pages/AboutPage/AboutPage';
 import ComponentPage from './containers/pages/ComponentPage/ComponentPage';
 import ProjectPage from './containers/pages/ProjectPage/ProjectPage';
+import './assets/styles/colors.css';
 import './global-styles.css';
 
 

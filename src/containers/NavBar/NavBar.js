@@ -16,40 +16,48 @@ function NavBar() {
     const [componentRendered, updateComponents] = useState([]);
     return (
         <div>
-            <div className={styles.navBar}>
-                <Link className={styles.headerLink} to="/">
-                    Home
-                </Link>
-                <Dropdown
-                    customButton={
-                        <Link className={styles.headerLink} to="/about">
-                            About
-                        </Link>
-                    }
-                    dropdownBackgroundColor="#0277BD"
-                >
-                    <DropdownLinks linkObject={
-                        [
-                            { route: "/about", textDisplay: "about" },
-                            { route: "/project", textDisplay: "project" }
-                        ]
-                    } />
-                </Dropdown>
-                <Dropdown
-                    customButton={
-                        <Link className={styles.headerLink} to="/component">
-                            Components
-                        </Link>
-                    }
-                    dropdownBackgroundColor="#0277BD"
-                >
-                    <ul className={styles.dropdownContainer}>
-                    <div onClick={() => {
-                        updateComponents([...componentRendered, createRPSObject()])
-                    }} >RockPaperScissors</div>
-                    </ul>
+            <div className={styles.navBarContainer}>
+                <div className={styles.navBarLeft}>
+                    fiejfieeifjeifjej
+                </div>
+                <div className={styles.navBarCenter}>
+                    <Link className={styles.headerLink} to="/">
+                        Home
+                    </Link>
+                    <Dropdown
+                        customButton={
+                            <Link className={styles.headerLink} to="/about">
+                                About
+                            </Link>
+                        }
+                        dropdownBackgroundColor="#0277BD"
+                    >
+                        <DropdownLinks linkObject={
+                            [
+                                { route: "/about", textDisplay: "about" },
+                                { route: "/project", textDisplay: "project" }
+                            ]
+                        } />
+                    </Dropdown>
+                    <Dropdown
+                        customButton={
+                            <Link className={styles.headerLink} to="/component">
+                                Components
+                            </Link>
+                        }
+                        dropdownBackgroundColor="#0277BD"
+                    >
+                        <ul className={styles.dropdownContainer}>
+                        <div onClick={() => {
+                            updateComponents([...componentRendered, createRPSObject()])
+                        }} >RockPaperScissors</div>
+                        </ul>
 
-                </Dropdown>
+                    </Dropdown>
+                </div>
+                <div className={styles.navBarRight}>
+                    fiejfiej
+                </div>
             </div>
             <DemoContainer componentRendered={componentRendered} />
         </div>

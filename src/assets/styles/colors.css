@@ -1,0 +1,16 @@
+body {
+  --background: #1565C0;
+  --exit-background: #ef9a9a;
+  --exit-text: #ffebee;
+  --primary-text: #B3E6FC;
+  --primary: #01579B;
+  --secondary: #0277BD;
+  --warning-text: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --background: black;
+  }
+}
+

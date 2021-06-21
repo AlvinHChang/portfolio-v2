@@ -5,5 +5,42 @@
   font-size:16px;
 }
 .githubLink ul a {
-  color: #B3E5FC;
+  color: var(--primary-text);
+}
+
+.showCaseListItem {
+  display: flex;
+  border-radius: 5px;
+  background-color: var(--primary);
+  height: 50px;
+  width: 250px;
+  justify-content:center;
+  align-items:center;
+}
+.showCaseListContainer > *:not(:last-child) {
+    margin-bottom: 30px; 
+}
+.showCaseListContainer {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.showCaseContainer {
+    display: grid;
+    grid-template-columns:  250px 100px 500px;
+    padding: 50px;
+    height: 80vh;
+}
+
+.showCaseDisplay {
+    grid-column-start: 3;
+  display: flex;
+  border-radius: 5px;
+  background-color: var(--primary);
+  height: 500px;
+  width: 500px;
+  justify-content:center;
+  align-items:center;
 }

@@ -3,5 +3,5 @@
   padding-bottom: 10px;
 }
 .githubLink ul a {
-  color: #B3E5FC;
+  color: var(--primary-text);
 }
