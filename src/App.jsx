@@ -14,15 +14,19 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavBar />
-        <div className={styles.wrapper}>
+        <div className={styles.navBarContainer}>
+          <NavBar />
+        </div>
+        <div className={styles.pageContainer}>
+          <div className={styles.pageComponentContainer}>
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/component" component={ComponentPage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/project" component={ProjectPage} />
-          {/* <Route path="" component={NotFoundPage} /> */}
+            <Route path="/about" component={AboutPage} />
+            <Route path="/project" component={ProjectPage} />
+            {/* <Route path="" component={NotFoundPage} /> */}
           </Switch>
+          </div>
         </div>
       </BrowserRouter>
     </div>

@@ -12,21 +12,10 @@ export default function Homepage() {
         <div>
           <div className={styles.centered}>
             <h2>
-              Welcome to Alvin Chang's Portfolio"
+              Hello! I'm Alvin Chang, a Software Engineer specializing in Full-Stack Development.
             </h2>
             <p>
-              Using React Boilerplate listed below, any extra
-              features/components is created solely by me to demonstrate and
-              practice my abilities in using React/Programming. This website
-              will be periodically to reflect my current work, experience, and
-              inspiration!
-            </p>
-            <p>
-              I understand the design is not the most aesthetically pleasing and
-              using a bootstrap or pre-made theme might make look better, but
-              this website is to primarily demonstrate my ability as a Software
-              Engineer and not UI/UX designer. That being said, all
-              feedback/suggestions are welcome!
+              Click around to find out about me. Or Click on components to see a component in action.
             </p>
           </div>
         </div>

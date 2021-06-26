@@ -12,26 +12,49 @@
   display: flex;
   border-radius: 5px;
   background-color: var(--primary);
-  height: 50px;
-  width: 250px;
+  height: 100px;
+  width: 200px;
   justify-content:center;
   align-items:center;
 }
 .showCaseListContainer > *:not(:last-child) {
-    margin-bottom: 30px; 
+  margin-bottom: 16px; 
+  margin-top: 16px; 
+}
+.showCaseListContainer > * {
+  margin-left: 16px;
 }
 .showCaseListContainer {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-direction: column;
+  height: 500px;
+  width: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.showCaseListContainer::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.showCaseListContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.showCaseListContainer::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+/* Handle on hover */
+.showCaseListContainer::-webkit-scrollbar-thumb:hover {
+  background: var(--active);
 }
 
 .showCaseContainer {
     display: grid;
     grid-template-columns:  250px 100px 500px;
     padding: 50px;
-    height: 80vh;
+
 }
 
 .showCaseDisplay {
@@ -43,4 +66,8 @@
   width: 500px;
   justify-content:center;
   align-items:center;
+}
+
+.selected {
+  background-color: var(--active);
 }

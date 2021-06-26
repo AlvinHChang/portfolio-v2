@@ -3,5 +3,8 @@
   padding-bottom: 10px;
 }
 .githubLink ul a {
-  color: var(--primary-text);
+  color: var(--link-text);
+}
+.aboutPage {
+  width: 400px;
 }

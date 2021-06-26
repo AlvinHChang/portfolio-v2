@@ -3,45 +3,70 @@
  *
  * List all the features
  */
-import React, { useEffect }from 'react';
+import React, { useEffect, useState }from 'react';
 import YouTube from 'react-youtube';
 import { motion, useAnimation } from 'framer-motion';
 
 import styles from './ProjectPage.module.css';
 
-const breathingListItem = (text) => {
-    return <motion.div key = {text} className={styles.showCaseListItem}
-            whileHover={{
-                scale: 1.05,
-                transition: { duration: .5, repeat: Infinity, repeatType: "mirror", repeatDelay: 0 },
-            }}
+const BreathingListItem = (props) => {
+    const { children, selected, onClick } = props;
+    return <motion.div 
+            className={`${styles.showCaseListItem} ${selected ? styles.selected : ''}`}
+            key = {children} 
+            onClick={onClick}
+            whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
         >
             <div className={styles.showCaseListText}>
-
-            {text}
+            {children}
             </div>
         </motion.div>
 }
 
+
 const createShowCaseDisplay = [];
-const projects = ["elven-platform", "portfolio-v2", "chess"];
+const projectNames = ["Elven-Platform", "portfolio-v2", "chess", "testiefj", "testiefj", "testiefj", "testiefj", "testiefj", "testiefj"];
 
 export default function ProjectPage() {
-    const controls = useAnimation()
+    const [selectedItem, setSelectedItem] = useState("");
+    const displayProjectObject = projectInfoObject[selectedItem];
 
 
     return (
         <div className={styles.showCaseContainer}>
             <div className={styles.showCaseListContainer}>
-                {projects.map((projectName) => breathingListItem(projectName))}
+                {projectNames.map((projectName) => <BreathingListItem selected={selectedItem === projectName} onClick={() => {setSelectedItem(projectName)}}>{projectName}</BreathingListItem>)}
             </div>
             <div className={styles.showCaseDisplay}>
-                text
+                <ul>
+                    <div className={styles.githubLink}>
+                    <ul>
+                        <a href="https://github.com/AlvinHChang/elven-platform">
+                        {selectedItem}
+                        </a>
+                    </ul>
+                    </div>
+                    <p>
+                        { displayProjectObject?.description}
+                    </p>
+                </ul>
             </div>
 
         </div>
     
     )
+}
+const projectInfoObject = {
+    [projectNames[0]]: {
+        projectLink: "https://github.com/AlvinHChang/elven-platform",
+        description:
+            "I'm designing a new type of platform where platform developers can create standalone apps which can take use of platform metadata. One technology I'm trying out is to create multiple iframes but only show one at a time. This will allow you to preload resources and display them when you need to."
+    },
+    [projectNames[1]]: {
+        projectLink: "https://github.com/AlvinHChang/Portfolio",
+        description: "This is the link to the Github of my current website. I made a quick version of it to demonstrate to employers, but I plan on expanding and improving it as time goes on. The website is in ReactJS."
+    }
 }
 // export default function ProjectPage() {
 //     return (

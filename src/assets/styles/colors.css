@@ -1,4 +1,4 @@
-body {
+/* body {
   --background: #1565C0;
   --exit-background: #ef9a9a;
   --exit-text: #ffebee;
@@ -6,11 +6,23 @@ body {
   --primary: #01579B;
   --secondary: #0277BD;
   --warning-text: red;
+} */
+body {
+  --active: #2CB1BC;
+  --background: #1565C0;
+  --component-background: #D9E2EC;
+  --exit-background: #F29B9B;
+  --exit-text: #ffebee;
+  --primary-text: #102A43;
+  --primary: #62B0E8;
+  --link-text: #0F609B;
+  --secondary: #38BEC9;
+  --warning-text: red;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    --background: black;
+  --background: #BCCCDC;
   }
 }
 

@@ -16,9 +16,9 @@ function NavBar() {
     const [componentRendered, updateComponents] = useState([]);
     return (
         <div>
-            <div className={styles.navBarContainer}>
+            <div className={styles.navBar}>
                 <div className={styles.navBarLeft}>
-                    fiejfieeifjeifjej
+                    Alvin Chang
                 </div>
                 <div className={styles.navBarCenter}>
                     <Link className={styles.headerLink} to="/">
@@ -30,7 +30,6 @@ function NavBar() {
                                 About
                             </Link>
                         }
-                        dropdownBackgroundColor="#0277BD"
                     >
                         <DropdownLinks linkObject={
                             [
@@ -45,7 +44,6 @@ function NavBar() {
                                 Components
                             </Link>
                         }
-                        dropdownBackgroundColor="#0277BD"
                     >
                         <ul className={styles.dropdownContainer}>
                         <div onClick={() => {

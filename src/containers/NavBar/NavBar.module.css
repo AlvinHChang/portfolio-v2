@@ -4,7 +4,7 @@ a {
   color: var(--primary-text);
 
 }
-.navBarContainer {
+.navBar {
   min-width: 0;
   text-align: center;
   background-color: var(--primary);
@@ -15,6 +15,7 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0 50px;
+  border-radius: 5px;
 }
 .navBarLeft {
   flex-grow: 1;
@@ -24,6 +25,7 @@ a {
   justify-content: flex-start;
   align-items: center;
 }
+
 .navBarRight {
   flex-grow: 1;
   display: flex;
@@ -32,6 +34,7 @@ a {
   justify-content: flex-end;
   align-items: center;
 }
+
 .navBarCenter {
   min-width: 0;
   text-align: center;
@@ -43,6 +46,7 @@ a {
   justify-content: center;
   align-items: center;
 }
+
 .headerLink {
     display: inline-flex;
   justify-content: center;

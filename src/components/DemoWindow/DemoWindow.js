@@ -15,7 +15,7 @@ function DemoWindow(props) {
       <>
         {isMounted && (
             <motion.div 
-            style={{position: 'absolute'}}
+            style={{position: 'absolute', zIndex: 100}}
              drag
              dragMomentum={false}
              >
