@@ -1,0 +1,16 @@
+.selector {
+    appearance: none;
+    margin: 0;
+    font-family: inherit;
+    width: 100%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 1.3;
+    color: var(--primary-text);
+    background-color: var(--component-background);
+}

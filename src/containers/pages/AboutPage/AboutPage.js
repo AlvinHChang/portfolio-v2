@@ -35,7 +35,7 @@ export default function AboutPage() {
                     <a href="https://github.com/AlvinHChang">Personal Github</a>
                 </ul>
                 <ul>
-                    <a href={Pdf} target="_blank">
+                    <a href={Pdf} rel="noreferrer" target="_blank">
                         Resume
                     </a>
                 </ul>

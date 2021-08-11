@@ -1,11 +1,21 @@
-.description {
-  font-size:14px;
-}
-.description p {
-  font-size:16px;
-}
-.githubLink ul a {
+.projectName {
+  font-size:25px;
   color: var(--primary-text);
+}
+.projectDescription {
+  font-size:16px;
+  color: var(--primary-text);
+}
+.githubLink a {
+  color: var(--primary-text);
+  background-color: var(--secondary);
+  border: 1px solid var(--component-background);
+  padding: 8px 16px;
+}
+.video {
+  height: 250px;
+  width: 400px;
+  padding: 8px;
 }
 
 .showCaseListItem {
